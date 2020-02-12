@@ -83,6 +83,7 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
+            'ParagonIE\\ConstantTime\\' => 23,
         ),
         'O' => 
         array (
@@ -99,7 +100,6 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'L' => 
         array (
             'League\\Flysystem\\' => 17,
-            'League\\CommonMark\\Ext\\Table\\' => 28,
             'League\\CommonMark\\' => 18,
             'Laravel\\Tinker\\' => 15,
         ),
@@ -111,6 +111,14 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'I' => 
         array (
             'Illuminate\\' => 11,
+        ),
+        'H' => 
+        array (
+            'Hedii\\LaravelGelfLogger\\' => 24,
+        ),
+        'G' => 
+        array (
+            'Gelf\\' => 5,
         ),
         'F' => 
         array (
@@ -290,6 +298,10 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
         ),
+        'ParagonIE\\ConstantTime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
+        ),
         'Opis\\Closure\\' => 
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
@@ -305,10 +317,6 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'League\\Flysystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
-        ),
-        'League\\CommonMark\\Ext\\Table\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/league/commonmark-ext-table/src',
         ),
         'League\\CommonMark\\' => 
         array (
@@ -329,6 +337,14 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
+        ),
+        'Hedii\\LaravelGelfLogger\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hedii/laravel-gelf-logger/src',
+        ),
+        'Gelf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf',
         ),
         'Fideloper\\Proxy\\' => 
         array (
@@ -1175,6 +1191,26 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'Faker\\ValidGenerator' => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker/ValidGenerator.php',
         'Fideloper\\Proxy\\TrustProxies' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustProxies.php',
         'Fideloper\\Proxy\\TrustedProxyServiceProvider' => __DIR__ . '/..' . '/fideloper/proxy/src/TrustedProxyServiceProvider.php',
+        'Gelf\\Encoder\\CompressedJsonEncoder' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Encoder/CompressedJsonEncoder.php',
+        'Gelf\\Encoder\\EncoderInterface' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Encoder/EncoderInterface.php',
+        'Gelf\\Encoder\\JsonEncoder' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Encoder/JsonEncoder.php',
+        'Gelf\\Encoder\\NoNullByteEncoderInterface' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Encoder/NoNullByteEncoderInterface.php',
+        'Gelf\\Logger' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Logger.php',
+        'Gelf\\Message' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Message.php',
+        'Gelf\\MessageInterface' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/MessageInterface.php',
+        'Gelf\\MessageValidator' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/MessageValidator.php',
+        'Gelf\\MessageValidatorInterface' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/MessageValidatorInterface.php',
+        'Gelf\\Publisher' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Publisher.php',
+        'Gelf\\PublisherInterface' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/PublisherInterface.php',
+        'Gelf\\Transport\\AbstractTransport' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Transport/AbstractTransport.php',
+        'Gelf\\Transport\\AmqpTransport' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Transport/AmqpTransport.php',
+        'Gelf\\Transport\\HttpTransport' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Transport/HttpTransport.php',
+        'Gelf\\Transport\\IgnoreErrorTransportWrapper' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Transport/IgnoreErrorTransportWrapper.php',
+        'Gelf\\Transport\\SslOptions' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Transport/SslOptions.php',
+        'Gelf\\Transport\\StreamSocketClient' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Transport/StreamSocketClient.php',
+        'Gelf\\Transport\\TcpTransport' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Transport/TcpTransport.php',
+        'Gelf\\Transport\\TransportInterface' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Transport/TransportInterface.php',
+        'Gelf\\Transport\\UdpTransport' => __DIR__ . '/..' . '/graylog2/gelf-php/src/Gelf/Transport/UdpTransport.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',
@@ -1243,6 +1279,8 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'Hamcrest\\Type\\IsString' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
+        'Hedii\\LaravelGelfLogger\\GelfLoggerFactory' => __DIR__ . '/..' . '/hedii/laravel-gelf-logger/src/GelfLoggerFactory.php',
+        'Hedii\\LaravelGelfLogger\\Processors\\NullStringProcessor' => __DIR__ . '/..' . '/hedii/laravel-gelf-logger/src/Processors/NullStringProcessor.php',
         'Highlight\\Autoloader' => __DIR__ . '/..' . '/scrivo/highlight.php/Highlight/Autoloader.php',
         'Highlight\\HighlightResult' => __DIR__ . '/..' . '/scrivo/highlight.php/Highlight/HighlightResult.php',
         'Highlight\\Highlighter' => __DIR__ . '/..' . '/scrivo/highlight.php/Highlight/Highlighter.php',
@@ -1276,6 +1314,7 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'Illuminate\\Auth\\Events\\OtherDeviceLogout' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/OtherDeviceLogout.php',
         'Illuminate\\Auth\\Events\\PasswordReset' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/PasswordReset.php',
         'Illuminate\\Auth\\Events\\Registered' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/Registered.php',
+        'Illuminate\\Auth\\Events\\Validated' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/Validated.php',
         'Illuminate\\Auth\\Events\\Verified' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/Events/Verified.php',
         'Illuminate\\Auth\\GenericUser' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/GenericUser.php',
         'Illuminate\\Auth\\GuardHelpers' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Auth/GuardHelpers.php',
@@ -1355,6 +1394,7 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'Illuminate\\Console\\Command' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Command.php',
         'Illuminate\\Console\\Concerns\\CallsCommands' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php',
         'Illuminate\\Console\\Concerns\\HasParameters' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Concerns/HasParameters.php',
+        'Illuminate\\Console\\Concerns\\InteractsWithIO' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Concerns/InteractsWithIO.php',
         'Illuminate\\Console\\ConfirmableTrait' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/ConfirmableTrait.php',
         'Illuminate\\Console\\DetectsApplicationNamespace' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/DetectsApplicationNamespace.php',
         'Illuminate\\Console\\Events\\ArtisanStarting' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Console/Events/ArtisanStarting.php',
@@ -2163,18 +2203,6 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'League\\CommonMark\\Event\\AbstractEvent' => __DIR__ . '/..' . '/league/commonmark/src/Event/AbstractEvent.php',
         'League\\CommonMark\\Event\\DocumentParsedEvent' => __DIR__ . '/..' . '/league/commonmark/src/Event/DocumentParsedEvent.php',
         'League\\CommonMark\\Exception\\UnexpectedEncodingException' => __DIR__ . '/..' . '/league/commonmark/src/Exception/UnexpectedEncodingException.php',
-        'League\\CommonMark\\Ext\\Table\\Table' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/Table.php',
-        'League\\CommonMark\\Ext\\Table\\TableCaption' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableCaption.php',
-        'League\\CommonMark\\Ext\\Table\\TableCaptionRenderer' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableCaptionRenderer.php',
-        'League\\CommonMark\\Ext\\Table\\TableCell' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableCell.php',
-        'League\\CommonMark\\Ext\\Table\\TableCellRenderer' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableCellRenderer.php',
-        'League\\CommonMark\\Ext\\Table\\TableExtension' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableExtension.php',
-        'League\\CommonMark\\Ext\\Table\\TableParser' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableParser.php',
-        'League\\CommonMark\\Ext\\Table\\TableRenderer' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableRenderer.php',
-        'League\\CommonMark\\Ext\\Table\\TableRow' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableRow.php',
-        'League\\CommonMark\\Ext\\Table\\TableRowRenderer' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableRowRenderer.php',
-        'League\\CommonMark\\Ext\\Table\\TableSection' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableSection.php',
-        'League\\CommonMark\\Ext\\Table\\TableSectionRenderer' => __DIR__ . '/..' . '/league/commonmark-ext-table/src/TableSectionRenderer.php',
         'League\\CommonMark\\Extension\\Autolink\\AutolinkExtension' => __DIR__ . '/..' . '/league/commonmark/src/Extension/Autolink/AutolinkExtension.php',
         'League\\CommonMark\\Extension\\Autolink\\EmailAutolinkProcessor' => __DIR__ . '/..' . '/league/commonmark/src/Extension/Autolink/EmailAutolinkProcessor.php',
         'League\\CommonMark\\Extension\\Autolink\\InlineMentionParser' => __DIR__ . '/..' . '/league/commonmark/src/Extension/Autolink/InlineMentionParser.php',
@@ -2935,6 +2963,17 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'PHP_Token_XOR_EQUAL' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_YIELD' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_YIELD_FROM' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'ParagonIE\\ConstantTime\\Base32' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base32.php',
+        'ParagonIE\\ConstantTime\\Base32Hex' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base32Hex.php',
+        'ParagonIE\\ConstantTime\\Base64' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base64.php',
+        'ParagonIE\\ConstantTime\\Base64DotSlash' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base64DotSlash.php',
+        'ParagonIE\\ConstantTime\\Base64DotSlashOrdered' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base64DotSlashOrdered.php',
+        'ParagonIE\\ConstantTime\\Base64UrlSafe' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Base64UrlSafe.php',
+        'ParagonIE\\ConstantTime\\Binary' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Binary.php',
+        'ParagonIE\\ConstantTime\\EncoderInterface' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/EncoderInterface.php',
+        'ParagonIE\\ConstantTime\\Encoding' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Encoding.php',
+        'ParagonIE\\ConstantTime\\Hex' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/Hex.php',
+        'ParagonIE\\ConstantTime\\RFC4648' => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src/RFC4648.php',
         'PharIo\\Manifest\\Application' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Application.php',
         'PharIo\\Manifest\\ApplicationName' => __DIR__ . '/..' . '/phar-io/manifest/src/values/ApplicationName.php',
         'PharIo\\Manifest\\Author' => __DIR__ . '/..' . '/phar-io/manifest/src/values/Author.php',
