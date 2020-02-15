@@ -17,13 +17,14 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
-        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
+        '9f394da3192a168c4633675768d80428' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -91,11 +92,13 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         ),
         'N' => 
         array (
+            'Nwidart\\Modules\\' => 16,
             'NunoMaduro\\Collision\\' => 21,
         ),
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Modules\\' => 8,
         ),
         'L' => 
         array (
@@ -105,6 +108,8 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         ),
         'J' => 
         array (
+            'Jenssegers\\Agent\\' => 17,
+            'Jaybizzle\\CrawlerDetect\\' => 24,
             'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
@@ -306,6 +311,10 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         array (
             0 => __DIR__ . '/..' . '/opis/closure/src',
         ),
+        'Nwidart\\Modules\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nwidart/laravel-modules/src',
+        ),
         'NunoMaduro\\Collision\\' => 
         array (
             0 => __DIR__ . '/..' . '/nunomaduro/collision/src',
@@ -313,6 +322,10 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Modules\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Modules',
         ),
         'League\\Flysystem\\' => 
         array (
@@ -325,6 +338,14 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'Laravel\\Tinker\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
+        ),
+        'Jenssegers\\Agent\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jenssegers/agent/src',
+        ),
+        'Jaybizzle\\CrawlerDetect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src',
         ),
         'JakubOnderka\\PhpConsoleHighlighter\\' => 
         array (
@@ -423,6 +444,13 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
                 0 => __DIR__ . '/..' . '/scrivo/highlight.php',
             ),
         ),
+        'D' => 
+        array (
+            'Detection' => 
+            array (
+                0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -435,6 +463,7 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\test' => __DIR__ . '/../..' . '/app/Http/Controllers/test.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CheckForMaintenanceMode' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckForMaintenanceMode.php',
@@ -443,6 +472,19 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Modules\\Api\\Api\\Database\\Seeders\\ApiDatabaseSeeder' => __DIR__ . '/../..' . '/app/Modules/Api/Api/Database/Seeders/ApiDatabaseSeeder.php',
+        'App\\Modules\\Api\\Api\\Http\\Controllers\\ApiController' => __DIR__ . '/../..' . '/app/Modules/Api/Api/Http/Controllers/ApiController.php',
+        'App\\Modules\\Api\\Api\\Providers\\ApiServiceProvider' => __DIR__ . '/../..' . '/app/Modules/Api/Api/Providers/ApiServiceProvider.php',
+        'App\\Modules\\Api\\Api\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Modules/Api/Api/Providers/RouteServiceProvider.php',
+        'App\\Modules\\Backend\\Database\\Seeders\\BackendDatabaseSeeder' => __DIR__ . '/../..' . '/app/Modules/Backend/Database/Seeders/BackendDatabaseSeeder.php',
+        'App\\Modules\\Backend\\Http\\Controllers\\BackendController' => __DIR__ . '/../..' . '/app/Modules/Backend/Http/Controllers/BackendController.php',
+        'App\\Modules\\Backend\\Providers\\BackendServiceProvider' => __DIR__ . '/../..' . '/app/Modules/Backend/Providers/BackendServiceProvider.php',
+        'App\\Modules\\Backend\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Modules/Backend/Providers/RouteServiceProvider.php',
+        'App\\Modules\\Online\\Hotel\\Database\\Seeders\\HotelDatabaseSeeder' => __DIR__ . '/../..' . '/app/Modules/Online/Hotel/Database/Seeders/HotelDatabaseSeeder.php',
+        'App\\Modules\\Online\\Hotel\\Http\\Controllers\\HotelController' => __DIR__ . '/../..' . '/app/Modules/Online/Hotel/Http/Controllers/HotelController.php',
+        'App\\Modules\\Online\\Hotel\\Http\\Controllers\\Wap\\HotelController' => __DIR__ . '/../..' . '/app/Modules/Online/Hotel/Http/Controllers/Wap/HotelController.php',
+        'App\\Modules\\Online\\Hotel\\Providers\\HotelServiceProvider' => __DIR__ . '/../..' . '/app/Modules/Online/Hotel/Providers/HotelServiceProvider.php',
+        'App\\Modules\\Online\\Hotel\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Modules/Online/Hotel/Providers/RouteServiceProvider.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -520,6 +562,7 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'DeepCopy\\TypeFilter\\Spl\\SplDoublyLinkedListFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php',
         'DeepCopy\\TypeFilter\\TypeFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
         'DeepCopy\\TypeMatcher\\TypeMatcher' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
+        'Detection\\MobileDetect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced/Detection/MobileDetect.php',
         'Doctrine\\Common\\Inflector\\Inflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php',
         'Doctrine\\Common\\Lexer\\AbstractLexer' => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php',
         'Doctrine\\Instantiator\\Exception\\ExceptionInterface' => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator/Exception/ExceptionInterface.php',
@@ -2138,6 +2181,14 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
+        'Jaybizzle\\CrawlerDetect\\CrawlerDetect' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/CrawlerDetect.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\AbstractProvider' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/AbstractProvider.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Crawlers' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Crawlers.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Exclusions' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Exclusions.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Headers' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Headers.php',
+        'Jenssegers\\Agent\\Agent' => __DIR__ . '/..' . '/jenssegers/agent/src/Agent.php',
+        'Jenssegers\\Agent\\AgentServiceProvider' => __DIR__ . '/..' . '/jenssegers/agent/src/AgentServiceProvider.php',
+        'Jenssegers\\Agent\\Facades\\Agent' => __DIR__ . '/..' . '/jenssegers/agent/src/Facades/Agent.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
@@ -2347,6 +2398,7 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+        'Mobile_Detect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV5.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV6' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV6.php',
@@ -2563,6 +2615,93 @@ class ComposerStaticInit3bc9872e1763c6d83818807f2c83deaf
         'NunoMaduro\\Collision\\Highlighter' => __DIR__ . '/..' . '/nunomaduro/collision/src/Highlighter.php',
         'NunoMaduro\\Collision\\Provider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Provider.php',
         'NunoMaduro\\Collision\\Writer' => __DIR__ . '/..' . '/nunomaduro/collision/src/Writer.php',
+        'Nwidart\\Modules\\Activators\\FileActivator' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Activators/FileActivator.php',
+        'Nwidart\\Modules\\Collection' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Collection.php',
+        'Nwidart\\Modules\\Commands\\CommandMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/CommandMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\ControllerMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/ControllerMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\DisableCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/DisableCommand.php',
+        'Nwidart\\Modules\\Commands\\DumpCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/DumpCommand.php',
+        'Nwidart\\Modules\\Commands\\EnableCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/EnableCommand.php',
+        'Nwidart\\Modules\\Commands\\EventMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/EventMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\FactoryMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/FactoryMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\GeneratorCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/GeneratorCommand.php',
+        'Nwidart\\Modules\\Commands\\InstallCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/InstallCommand.php',
+        'Nwidart\\Modules\\Commands\\JobMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/JobMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\LaravelModulesV6Migrator' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/LaravelModulesV6Migrator.php',
+        'Nwidart\\Modules\\Commands\\ListCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/ListCommand.php',
+        'Nwidart\\Modules\\Commands\\ListenerMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/ListenerMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\MailMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/MailMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\MiddlewareMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/MiddlewareMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\MigrateCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/MigrateCommand.php',
+        'Nwidart\\Modules\\Commands\\MigrateRefreshCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/MigrateRefreshCommand.php',
+        'Nwidart\\Modules\\Commands\\MigrateResetCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/MigrateResetCommand.php',
+        'Nwidart\\Modules\\Commands\\MigrateRollbackCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/MigrateRollbackCommand.php',
+        'Nwidart\\Modules\\Commands\\MigrateStatusCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/MigrateStatusCommand.php',
+        'Nwidart\\Modules\\Commands\\MigrationMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/MigrationMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\ModelMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/ModelMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\ModuleDeleteCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/ModuleDeleteCommand.php',
+        'Nwidart\\Modules\\Commands\\ModuleMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/ModuleMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\NotificationMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/NotificationMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\PolicyMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/PolicyMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\ProviderMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/ProviderMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\PublishCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/PublishCommand.php',
+        'Nwidart\\Modules\\Commands\\PublishConfigurationCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/PublishConfigurationCommand.php',
+        'Nwidart\\Modules\\Commands\\PublishMigrationCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/PublishMigrationCommand.php',
+        'Nwidart\\Modules\\Commands\\PublishTranslationCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/PublishTranslationCommand.php',
+        'Nwidart\\Modules\\Commands\\RequestMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/RequestMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\ResourceMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/ResourceMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\RouteProviderMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/RouteProviderMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\RuleMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/RuleMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\SeedCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/SeedCommand.php',
+        'Nwidart\\Modules\\Commands\\SeedMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/SeedMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\SetupCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/SetupCommand.php',
+        'Nwidart\\Modules\\Commands\\TestMakeCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/TestMakeCommand.php',
+        'Nwidart\\Modules\\Commands\\UnUseCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/UnUseCommand.php',
+        'Nwidart\\Modules\\Commands\\UpdateCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/UpdateCommand.php',
+        'Nwidart\\Modules\\Commands\\UseCommand' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Commands/UseCommand.php',
+        'Nwidart\\Modules\\Contracts\\ActivatorInterface' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Contracts/ActivatorInterface.php',
+        'Nwidart\\Modules\\Contracts\\PublisherInterface' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Contracts/PublisherInterface.php',
+        'Nwidart\\Modules\\Contracts\\RepositoryInterface' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Contracts/RepositoryInterface.php',
+        'Nwidart\\Modules\\Contracts\\RunableInterface' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Contracts/RunableInterface.php',
+        'Nwidart\\Modules\\Exceptions\\FileAlreadyExistException' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Exceptions/FileAlreadyExistException.php',
+        'Nwidart\\Modules\\Exceptions\\InvalidActivatorClass' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Exceptions/InvalidActivatorClass.php',
+        'Nwidart\\Modules\\Exceptions\\InvalidAssetPath' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Exceptions/InvalidAssetPath.php',
+        'Nwidart\\Modules\\Exceptions\\InvalidJsonException' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Exceptions/InvalidJsonException.php',
+        'Nwidart\\Modules\\Exceptions\\ModuleNotFoundException' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Exceptions/ModuleNotFoundException.php',
+        'Nwidart\\Modules\\Facades\\Module' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Facades/Module.php',
+        'Nwidart\\Modules\\FileRepository' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/FileRepository.php',
+        'Nwidart\\Modules\\Generators\\FileGenerator' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Generators/FileGenerator.php',
+        'Nwidart\\Modules\\Generators\\Generator' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Generators/Generator.php',
+        'Nwidart\\Modules\\Generators\\ModuleGenerator' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Generators/ModuleGenerator.php',
+        'Nwidart\\Modules\\Json' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Json.php',
+        'Nwidart\\Modules\\LaravelModulesServiceProvider' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/LaravelModulesServiceProvider.php',
+        'Nwidart\\Modules\\Laravel\\LaravelFileRepository' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Laravel/LaravelFileRepository.php',
+        'Nwidart\\Modules\\Laravel\\Module' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Laravel/Module.php',
+        'Nwidart\\Modules\\LumenModulesServiceProvider' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/LumenModulesServiceProvider.php',
+        'Nwidart\\Modules\\Lumen\\LumenFileRepository' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Lumen/LumenFileRepository.php',
+        'Nwidart\\Modules\\Lumen\\Module' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Lumen/Module.php',
+        'Nwidart\\Modules\\Migrations\\Migrator' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Migrations/Migrator.php',
+        'Nwidart\\Modules\\Module' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Module.php',
+        'Nwidart\\Modules\\ModulesServiceProvider' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/ModulesServiceProvider.php',
+        'Nwidart\\Modules\\Process\\Installer' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Process/Installer.php',
+        'Nwidart\\Modules\\Process\\Runner' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Process/Runner.php',
+        'Nwidart\\Modules\\Process\\Updater' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Process/Updater.php',
+        'Nwidart\\Modules\\Providers\\BootstrapServiceProvider' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Providers/BootstrapServiceProvider.php',
+        'Nwidart\\Modules\\Providers\\ConsoleServiceProvider' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Providers/ConsoleServiceProvider.php',
+        'Nwidart\\Modules\\Providers\\ContractsServiceProvider' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Providers/ContractsServiceProvider.php',
+        'Nwidart\\Modules\\Publishing\\AssetPublisher' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Publishing/AssetPublisher.php',
+        'Nwidart\\Modules\\Publishing\\LangPublisher' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Publishing/LangPublisher.php',
+        'Nwidart\\Modules\\Publishing\\MigrationPublisher' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Publishing/MigrationPublisher.php',
+        'Nwidart\\Modules\\Publishing\\Publisher' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Publishing/Publisher.php',
+        'Nwidart\\Modules\\Routing\\Controller' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Routing/Controller.php',
+        'Nwidart\\Modules\\Support\\Config\\GenerateConfigReader' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Support/Config/GenerateConfigReader.php',
+        'Nwidart\\Modules\\Support\\Config\\GeneratorPath' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Support/Config/GeneratorPath.php',
+        'Nwidart\\Modules\\Support\\Migrations\\NameParser' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Support/Migrations/NameParser.php',
+        'Nwidart\\Modules\\Support\\Migrations\\SchemaParser' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Support/Migrations/SchemaParser.php',
+        'Nwidart\\Modules\\Support\\Stub' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Support/Stub.php',
+        'Nwidart\\Modules\\Traits\\CanClearModulesCache' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Traits/CanClearModulesCache.php',
+        'Nwidart\\Modules\\Traits\\MigrationLoaderTrait' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Traits/MigrationLoaderTrait.php',
+        'Nwidart\\Modules\\Traits\\ModuleCommandTrait' => __DIR__ . '/..' . '/nwidart/laravel-modules/src/Traits/ModuleCommandTrait.php',
         'Opis\\Closure\\Analyzer' => __DIR__ . '/..' . '/opis/closure/src/Analyzer.php',
         'Opis\\Closure\\ClosureContext' => __DIR__ . '/..' . '/opis/closure/src/ClosureContext.php',
         'Opis\\Closure\\ClosureScope' => __DIR__ . '/..' . '/opis/closure/src/ClosureScope.php',
