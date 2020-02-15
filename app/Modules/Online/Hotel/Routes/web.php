@@ -12,6 +12,6 @@
 */
 
 Route::prefix('hotel')->group(function() {
-
     Route::get('/', 'HotelController@index');
+
 });
