@@ -9,6 +9,7 @@ use App\Services\Order\Test;
 use App\Modules\Online\Hotel\Http\Logics\HotelLogic;
 use App\Modules\Online\Hotel\Http\Requests\Request as RequestCheck ;
 
+
 class HotelController extends Controller
 {
     /**
@@ -31,6 +32,7 @@ class HotelController extends Controller
         echo '<br>';
         echo '输出展示';
         return view('hotel::pc.index');
+
     }
 
     /**
@@ -57,9 +59,12 @@ class HotelController extends Controller
      * @param int $id
      * @return Response
      */
-    public function show($id)
+    public function show()
     {
-        return view('hotel::show');
+       $a =  config('url.hotel_url');
+       var_dump($a);
+        var_dump(route ('hotel.show'));
+        echo 4444;
     }
 
     /**
