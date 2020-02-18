@@ -1,0 +1,13 @@
+{
+    "name": "Online",
+    "alias": "online",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "App\\Modules\\Online\\Providers\\OnlineServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
