@@ -2,5 +2,6 @@
     "Backend": true,
     "Api": true,
     "Hotel": true,
-    "Test": true
+    "Test": true,
+    "Online": true
 }

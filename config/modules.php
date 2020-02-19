@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'namespace' => 'App\Modules\Online',
+    'namespace' => 'App\Modules',
 
     /*
     |--------------------------------------------------------------------------
@@ -70,7 +70,7 @@ return [
         |
         */
 
-        'modules' => base_path('app/Modules/Online'),
+        'modules' => base_path('app/Modules'),
         /*
         |--------------------------------------------------------------------------
         | Modules assets path
