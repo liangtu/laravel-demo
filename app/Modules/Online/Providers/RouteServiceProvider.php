@@ -12,8 +12,8 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $moduleNamespace = 'App\Modules\Online\Http\Hotel\Controllers';
-    protected $moduleWapNamespace = 'App\Modules\Online\Http\Hotel\Controllers\Wap';
+
+   // protected $moduleNamespace = 'App\Modules\Online\Http\Hotel\Controllers';
 
     /**
      * Called before routes are registered.
@@ -34,7 +34,6 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-
         $this->mapApiRoutes();
 
         $this->mapWebRoutes();
@@ -49,17 +48,11 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapWebRoutes()
     {
-        $isMobile = \Agent::isMobile();
-
-        if($isMobile){
-            $moduleNamespace = $this->moduleWapNamespace;
-        }else{
-            $moduleNamespace = $this->moduleNamespace;
-        }
 
         Route::middleware('web')
-            ->namespace($moduleNamespace)
+           // ->namespace($moduleNamespace)
             ->group(module_path('Online', '/Routes/web.php'));
+
     }
 
     /**
@@ -73,7 +66,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::prefix('api')
             ->middleware('api')
-            ->namespace($this->moduleNamespace)
+           // ->namespace($this->moduleNamespace)
             ->group(module_path('Online', '/Routes/api.php'));
     }
 }
