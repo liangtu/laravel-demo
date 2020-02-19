@@ -19,8 +19,8 @@ $mapNamespace= [
 
 //匹配域名
 $mapDomain   =[
-                  'hotel' =>config('url.hotel_url'),
-                  'scenic'=>config('url.hotel_url'),
+                  'hotel' =>config('url.h_url'),
+                  'scenic'=>config('url.sc_url'),
                ];
 
 
@@ -31,7 +31,6 @@ if($isMobile) {
         return $v . '\Wap';
     }, $mapNamespace);
 }
-
 
 //hotel
 Route::domain($mapDomain['hotel'])
