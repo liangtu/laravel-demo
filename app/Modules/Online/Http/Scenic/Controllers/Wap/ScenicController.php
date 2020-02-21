@@ -34,7 +34,7 @@ class ScenicController extends Controller
         echo '<br>';
         echo '输出展示';
       //  return view('Scenic.pc.index');
-        return view('online::Scenic.wap.index');
+        return view('online::scenic.wap.index');
 
     }
 
