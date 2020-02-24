@@ -23,3 +23,6 @@ Route::get('/index/', function () {
     echo 4444;
     //return view('hello');
 });
+
+
+Route::get('queue', 'QueueController@index');
