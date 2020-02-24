@@ -16,11 +16,14 @@ class ScenicController extends Controller
      * Display a listing of the resource.
      * @return Response
      */
-    public function index(Request $request)
+    public function index(Request $request,$id)
     {
+
        // Test::test(); //测试公共业务逻辑
 
-        $id = $request->input('id');
+      $date= $request->input('date');
+      var_dump($date);
+       var_dump($id);
         //入参检验
         $ck =    new RequestCheck();
         $ck->check();

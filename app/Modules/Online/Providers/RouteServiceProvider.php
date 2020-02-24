@@ -13,8 +13,6 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
 
-   // protected $moduleNamespace = 'App\Modules\Online\Http\Hotel\Controllers';
-
     /**
      * Called before routes are registered.
      *
@@ -34,9 +32,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        $this->mapApiRoutes();
+        $this->mapHotelRoutes();
 
-        $this->mapWebRoutes();
+        $this->mapScenicRoutes();
     }
 
     /**
@@ -46,12 +44,11 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function mapWebRoutes()
+    protected function mapHotelRoutes()
     {
 
         Route::middleware('web')
-           // ->namespace($moduleNamespace)
-            ->group(module_path('Online', '/Routes/web.php'));
+            ->group(module_path('Online', '/Routes/hotel.php'));
 
     }
 
@@ -62,11 +59,9 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function mapApiRoutes()
+    protected function mapScenicRoutes()
     {
-        Route::prefix('api')
-            ->middleware('api')
-           // ->namespace($this->moduleNamespace)
-            ->group(module_path('Online', '/Routes/api.php'));
+        Route::middleware('web')
+            ->group(module_path('Online', '/Routes/scenic.php'));
     }
 }
